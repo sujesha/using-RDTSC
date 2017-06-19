@@ -1,0 +1,14 @@
+To compare CPU performance of different implementations of the same algorithm, 
+or to compare performance of different algorithms that perform a certain task, 
+we may need to measure the CPU cycles incurred for the implementation(s)
+and algorithm(s) concerned. Piece-by-piece comparison of individual steps
+in an algorithm may also be done in a simulation module, to suggest which
+alternative implementation has lower CPU overhead than others.
+
+In this document, we present collated information regarding how-to use the
+model-specific TSC register to count the number
+of ticks or CPU cycles spent for any target set of instructions. For ease of 
+use, we make available snippets of code that can be pasted into existing
+code to quickly perform measurement. We also present a
+sample use-case at the end, of measuring CPU cycles incurred for MD5 hashing
+and outline our learnings.
